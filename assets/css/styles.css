@@ -1,0 +1,989 @@
+html{
+
+
+}
+body{
+  background: #000927;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: arial;
+  letter-spacing: 0.05em;
+  background-image: url(/assets/images/screen-overlay.png);
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #00071f;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffe000;
+}
+#LoadingScreen{
+  width: 20%;
+  height: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #ffe000;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ffe000 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#DashForm input:-internal-autofill-selected {
+  background-color: inherit;
+}
+#DashForm input:-webkit-autofill,
+#DashForm input:-webkit-autofill:hover,
+#DashForm input:-webkit-autofill:focus
+#DashForm textarea:-webkit-autofill,
+#DashForm textarea:-webkit-autofill:hover
+#DashForm textarea:-webkit-autofill:focus,
+#DashForm select:-webkit-autofill,
+#DashForm select:-webkit-autofill:hover,
+#DashForm select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #000927 inset;
+}
+.SiteWrap{
+  width:1024px;
+  margin: 0px auto;
+}
+Header {
+    overflow: hidden;
+    height: 120px;
+    border-width: 0px 0px 6px 0px;
+    border-color: #ffe000;
+    border-style: solid;
+}
+header h1 {
+    color: #ffe000;
+    text-align: left;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 30px 0px 0px 0px;
+    line-height: 1.3;
+}
+header h2 {
+    color: #ffe000;
+    text-align: left;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0px;
+    line-height: 1.3;
+}
+#SASPlogo {
+    width: 18%;
+    float: left;
+    margin: 16px;
+}
+#HeaderInfo {
+    width: 50%;
+    height: 114px;
+    float: left;
+}
+#Logo {
+    width: 50%;
+    float: left;
+    color: #ffe000;
+    font-size: 2rem;
+    overflow: hidden;
+    text-align: center;
+}
+#HeaderInfoTop {
+    width: 100%;
+    color: #6d8bff;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.usernameShow{
+  margin-right: 10px;
+}
+.headerTime {
+    letter-spacing: 0.1rem;
+    color: #ffe000;
+    font-weight: bold;
+}
+nav{
+  width: 100%;
+  display: block;
+  height: 40px;
+  }
+#Content {
+    color: #ffe000;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.FormWrapper {
+    width: 30%;
+    background-color: #001046;
+    border-color: #ffe000;
+    border-style: solid;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#LoginForm, #DashForm {
+    color: #ffe000;
+    text-align: center;
+    font-family: arial;
+    font-size: 1.7em;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+}
+#DashForm form{
+  overflow: hidden;
+}
+#LoginForm h2, #DashForm h2 {
+    text-transform: uppercase;
+}
+#LoginForm label, #DashForm label {
+    display: block;
+    text-align: center;
+    background-color: #00196d;
+    padding: 0.3rem;
+}
+.form-group {
+    padding: 10px;
+    margin: 0px auto;
+    width: 60%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#DashForm .form-group {
+    padding: 10px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    float: left;
+}
+#SearchBox{
+  width: 40%;
+  margin-left: 45px !important;
+}
+.bookingsearch{
+  width: 40%;
+}
+#SearchOptions{
+  width: 25%;
+}
+#SelectPersons {
+    width: 35%;
+}
+#DashForm .LoginBtn {
+    height: 100%;
+}
+#DashForm .dash-form-group {
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    height: 87px;
+}
+#LoginForm input, #DashForm input {
+    background-color: #000927;
+    border-color: #00196d;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 0.4em;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+}
+#LoginForm select, #DashForm select {
+    background-color: #000927;
+    border-color: #00196d;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 0.4em;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+}
+
+
+#LoginForm .LoginBtn, #DashForm .LoginBtn {
+    padding: 0.8rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+}
+#LoginForm .LoginBtn:hover, #DashForm .LoginBtn:hover {
+    padding: 0.8rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+    background-color: #00196d;
+    color: #ffe000;
+    cursor: pointer;
+}
+#LoginForm .RegBtn, #DashForm .RegBtn {
+    padding: 0.8rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+}
+#MenuList{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+#MenuList li {
+    text-align: right;
+    font-size: 1rem;
+    height: 100%;
+    float: left;
+}
+#MenuRight{
+    float: right !important;
+    background-color: #00196d;
+}
+#MenuList li:hover {
+  background-color: #ffe000;
+  height: 100%;
+  color: blue;
+}
+#Logout{
+  display: block;
+}
+#MenuList a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8rem;
+    display: block;
+}
+#MenuList a:hover {
+    color: black;
+    font-weight: bold;
+}
+#LogoutBtn {
+    display: block;
+    float: right !important;
+    background-color: #ff0000;
+}
+#Content{
+  color: #ffe000;
+}
+#LoggedTitle {
+    color: #ffe000;
+    font-size: 1rem;
+    background-color: #000927;
+    padding: 0.6rem;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+#LoggedUser {
+    color: white;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 0px auto;
+    text-align: center;
+    border-style: solid;
+    border-color: #ffe000;
+    border-width: 1px;
+    width: 200px;
+    float: right;
+    text-transform: capitalize;
+}
+#LoggedUser2 {
+    color: #ffe000;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 0px auto;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    width: 100px;
+    float: right;
+}
+#LogoutBtn {
+    color: #ffe000;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 0px auto;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    width: 100px;
+    float: right;
+    margin-left: 10px;
+    border-color: #ff0000;
+}
+#LogoutBtn a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+#LogoutBtn:hover{
+  color: #ff0000;
+  text-decoration: none;
+  background-color: #5f0000;
+  font-weight: bold;
+  border-color: #ff0000;
+}
+.role{
+  color: #ffffff;
+}
+.personsIMG{
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+#personsData {
+    font-size: 1rem;
+    float: left;
+    width: 100%;
+}
+#personsData p {
+    float: left;
+    margin: 0;
+    padding: 14px;
+    width: 28%;
+}
+.SearchResults {
+    width: 100%;
+    overflow: hidden;
+    background-color: #00196d;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.SearchResults:hover {
+    background-color: #6d8bff;
+}
+.SearchTitle {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.SearchResults a, .SearchResults a:visited {
+    color: #ffe000;
+}
+#NeighboorhoodInput {
+    width: 35%;
+}
+#BookingsNeighbourhoodautocomplete-list {
+    background-color: #000c33;
+    border-style: solid;
+    border-color: #00196d;
+    border-width: 0px 2px 0px 2px;
+}
+.autocomplete-list-item {
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: #00196d;
+    padding: 6px;
+}
+.autocomplete-list-item:hover {
+    background-color: #00196d;
+    cursor: pointer;
+}
+#BookingsNeighbourhood:focus {
+    outline-color: #7393ff;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-style: solid;
+}
+#BookingSections, #NotesSection, #PersonsSection{
+  width: 100%;
+  overflow: hidden;
+}
+#PersonsSectionTop{
+  width: 100%;
+  height: 52px;
+  overflow: visible;
+  padding: 0px 25px;
+}
+#PersonsSectionTop .SearchBtn {
+    width: 100px !important;
+    float: left;
+    background-color: #988600;
+    border-color: #ffe000;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: white;
+    height: 80%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 3px;
+}
+.PersonsForm {
+    overflow: hidden;
+}
+.ExistingNCICselect{
+  text-transform: capitalize;
+}
+#BookingsDateTime {
+    width: 30%;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+#BookingChargesInput, #NotesInput {
+    width: 100%;
+    max-width: 100%;
+    height: 125px;
+    background-color: #000927;
+    border-color: #00196d;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 0.4em;
+    font-size: 1em;
+    color: white;
+    border-width: 2px;
+}
+#BookingsButton .LoginBtn {
+    width: 50%;
+    float: left;
+}
+#BookingSubmitBy {
+    width: 50%;
+}
+#BookingsButton {
+    width: 50%;
+}
+#BookingSubmitBy {
+    width: 50%;
+    text-align: right;
+    line-height: 4em;
+}
+#SelectPersons input {
+    cursor: no-drop;
+}
+.FormButton {
+    background-color: #000927;
+    border-color: #00196d;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 0.4em;
+    font-size: 1em;
+    color: white;
+    width: 350px;
+    height: 100%;
+}
+.FormButton:hover {
+  padding: 0.8rem;
+  margin: 0rem 0rem 0.8rem 0rem;
+  background-color: #00196d;
+  color: #ffe000;
+  cursor: pointer;
+}
+#SearchSection {
+    height: 100px;
+    text-align: center;
+}
+#SearchSection .FormButton {
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    width: 250px;
+    margin: 10px;
+    height: 80%;
+}
+#PersonsPhoto {
+    background-color: #00196d;
+    width: 140px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    border-color: #ffe000;
+    border-width: 6px;
+    border-style: solid;
+    margin: 4px;
+    float: left;
+}
+.BookingLabel {
+    padding: 10px;
+    margin: 18px 0px 18px 12px;
+    background-color: #00196d;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.BookingInformation {
+    background-color: #000515;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+}
+#BookingLocationInfo {
+    width: 100%;
+    float: left;
+    margin: 10px 0px;
+    text-align: center;
+}
+#PersonsInfo {
+    width: 95%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+#PersonsInfoHalf {
+    width: 45%;
+    float: left;
+    text-align: center;
+    margin: 0px 25px;
+    overflow: hidden;
+}
+#BookingLocationInfo .BookingLabel, #PersonsInfoHalf .BookingLabel, #PersonsInfo .PersonsLabel   {
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    background-color: #00196d;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#BookingLocationInfo .BookingInformation, #PersonsInfoHalf .BookingInformation, #PersonsInfo .PersonsInformation{
+    background-color: #000515;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+#BookingLocationInfo pre {
+    width: 99%;
+    overflow-wrap: break-word;
+    font-family: inherit;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    background-color: #000515;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-align: justify;
+}
+#BookingLocationInfo b {
+    color: yellow;
+}
+.BookingLabelSmall {
+    padding: 10px;
+    margin: 10px 0px 10px 12px;
+    background-color: #00196d;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.BookingInformationSmall {
+    background-color: #000515;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: white;
+    text-transform: capitalize;
+    display: inline-block;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+#SearchWrap {
+    width: 98%;
+    margin: 0px auto;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 58%;
+}
+#personsData .bid{
+    width: 10%;
+}
+#personsData .Names {
+    width: 31.8%;
+}
+#personsData .Date {
+    width: 15%;
+}
+#personsData .Charges{
+  width: 100%;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+#BookingsDesc {
+    width: 100%;
+}
+#BookingDescInput {
+    width: 100%;
+    min-height: 140px;
+    background-color: #000927;
+    border-color: #00196d;
+    border-style: solid;
+    box-sizing: border-box;
+    padding: 0.4em;
+    font-size: 1em;
+    color: white;
+    border-width: 2px;
+}
+#PersonsCautions {
+    margin: 0px auto;
+    width: 96.9%;
+    padding: 10px 16px;
+    overflow: hidden;
+    font-size: 1.6em;
+}
+.CautionLabel {
+    background-color: #1b223e !important;
+    color: #757575;
+    font-size: inherit;
+    margin: 3px;
+    vertical-align: middle;
+    display: inline-block !important;
+    padding: 8px 4px !important;
+    text-align: center !important;
+    float: left;
+}
+.CautionLabelActive {
+    background-color: #ff0000 !important;
+    color: #ffffff;
+    font-size: inherit;
+    margin: 3px;
+    vertical-align: middle;
+    display: inline-block !important;
+    padding: 8px 4px !important;
+    text-align: center !important;
+    float: left;
+}
+.PersonsBtnWrap {
+    height: 30px;
+    overflow: visible;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: right;
+}
+.PersonsBtn {
+    background-color: #988600;
+    border-color: #ffe000;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    padding: 0.6rem 1rem;
+    font-size: 1em;
+    color: white;
+    width: 8%;
+    height: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 3px;
+}
+.PersonsBtn:hover {
+  background-color: #ffe000;
+      border-color: #988600;
+      cursor: pointer;
+      color: #000000;
+}
+.NotesInformation {
+    background-color: #000515;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    font-size: 0.8rem;
+    color: white;
+    display: inline-block;
+    width: 97.9%;
+    text-align: left;
+    overflow: hidden;
+}
+.NotesInformation pre {
+    width: 100%;
+    display: block;
+    overflow-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    text-align: justify;
+    font-family: inherit;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+.NotesTop {
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #ffe000;
+    padding: 0.4rem 0rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#NotesSectionTopLeft {
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding: 0px 10px !important;
+    font-style: italic;
+}
+#NotesSectionTopRight {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding: 0px 10px !important;
+    font-style: italic;
+}
+#NotesButton input {
+    width: 20%;
+    float: right;
+    margin: 0px;
+}
+#NotesButton {
+    width: 100%;
+}
+.NoteInsertInfoBottom {
+    text-align: right;
+    font-size: 1rem;
+    font-style: italic;
+    display: inline-block;
+    padding: 16px 10px;
+    float: right;
+    color: #6d8bff;
+}
+.SectionLogo {
+    width: 150px;
+    height: 150px;
+}
+#SectionLogoHeader{
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+#bookingTable {
+    width: 100%;
+    background-color: #00071d;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+#bookingTable a, #bookingTable a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+#bookingTable tr{
+  width: 100%;
+}
+#bookingTable tr:hover{
+  background-color: #5e76c5;
+  cursor: pointer;
+}
+
+#bookingTable td{
+  padding: 4px 0px;
+  text-align: center;
+  text-transform: capitalize;
+}
+#bookingTable th {
+    background-color: #ffe000;
+    color: #000000;
+    padding: 10px 0px;
+}
+#id-table {
+    width: 6%;
+    color: yellow;
+}
+#ncic-table {
+    width: 33%;
+}
+#date-table {
+    width: 8.5%;
+}
+#charge-table {
+    width: 55%;
+    max-width: 0; /* Avoid resizing beyond table width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+tr:nth-child(odd) {
+    background-color: #00196d;
+}
+tr:nth-child(even) {
+    background-color: #000e3c;
+}
+.BookingLocation50 {
+    width: 48% !important;
+    margin: 0px 0px 0px 10px !important;
+    overflow: hidden;
+}
+.nonvisible{
+  display: none;
+}
+.SearchForm {
+    width: 70%;
+    margin: 0px -80px 0px 0px;
+    float: right;
+    padding: 0;
+}
+.SearchBtn {
+    width: 100px !important;
+    margin: 9px 0px;
+    float: left;
+}
+.SearchBtn:hover {
+  background-color: #758ad0 !important;
+  border-color: #a5baff !important;
+  cursor: pointer;
+}
+.TopBtn {
+    background-color: #00196d;
+    border-color: #0027ab;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: content-box;
+    padding: 0.6rem 1rem;
+    color: white;
+    width: 8%;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0px 0px 11px;
+    font-size: 0.8rem;
+    float: left;
+}
+.TopBtn:hover {
+    background-color: #214fff;
+    border-color: #6f8eff;
+    color: #ffe000;
+    cursor: pointer;
+}
+.TableBtn {
+    background-color: #988600;
+    border-color: #ffe000;
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: content-box;
+    padding: 0.6rem 1rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px;
+    font-size: 0.8rem;
+}
+.TableBtn:hover {
+      background-color: #ffe000;
+      border-color: #988600;
+      cursor: pointer;
+      color: #000000;
+}
+.PageNumWrap{
+  overflow: hidden;
+  text-align: right;
+}
+.echoTest{
+  font-size: 18px;
+  color: white;
+}
+.ResultsNumShow {
+    font-size: 1rem;
+    background-color: #00196d;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.mugshot-table{
+  width: 60px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+}
+.persons50per {
+    padding: 10px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+.persons30per{
+    padding: 10px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+}
+#CautionCodeChecks {
+    margin: 0px auto;
+    width: 96.5%;
+    padding: 10px 16px;
+    overflow: hidden;
+    font-size: 0.87em;
+}
+#CautionCodeChecks label{
+  cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.CautionCheckboxes{
+    background-color: #1b223e !important;
+    color: #757575;
+    font-size: 1rem;
+    margin: 3px;
+    vertical-align: middle;
+    display: inline-block !important;
+    padding: 8px 4px !important;
+    float: left;
+}
+#SubmitWrap {
+    width: 25%;
+    height: 50px;
+    margin: 0px auto;
+}
+.SubmitBtn {
+    height: 100%;
+}
+.SubmitBtn:hover {
+    background-color: #00196d !important;
+    color: #ffe000 !important;
+    cursor: pointer;
+}
